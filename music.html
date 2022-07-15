@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Music Player</title>
+  </head>
+  <body>
+    <div class="kamen playlist">
+      <div class="bar playlist__bar">
+        <i class="fa-solid fa-arrow-left fa-lg"></i>
+        <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+      </div>
+      <div class="playlist__artist">
+        <img src="pictures/mia.jpg" />
+        <p class="playlist__artist__name">三月のパンタシア</p>
+        <p class="playlist__artist__genre">J-POP, アニメ</p>
+      </div>
+      <div class="playlist__buttons">
+        <div class="press-buttons playlist__buttons__shuffle">Shuffle</div>
+        <div class="press-buttons playlist__buttons__heart">
+          <i class="fa-solid fa-heart"></i>
+          <p class="playlist__buttons__heart__text">150,816</p>
+        </div>
+      </div>
+      <div class="playlist__moku">
+        <div class="playlist__moku__box">
+          <img src="pictures/girlsbluehappysad.jpg" />
+          <div class="playlist__moku__box__text">
+            <p>三月のパンタシア</p>
+            <p>青春なんていらないは</p>
+          </div>
+          <i class="fa-solid fa-ellipsis-vertical fa-xl"></i>
+        </div>
+        <div class="playlist__moku__box">
+          <div class="playlist__moku__playing">
+            <img src="pictures/bluepop.jpg" />
+            <i class="fa-solid fa-chart-simple fa-xl"></i>
+          </div>
+
+          <div class="playlist__moku__box__text">
+            <p>三月のパンタシア</p>
+            <p>ミッドナイトブルー</p>
+          </div>
+          <i class="fa-solid fa-ellipsis-vertical fa-xl"></i>
+        </div>
+        <div class="playlist__moku__box">
+          <img src="pictures/pinklemonade.jpg" />
+          <div class="playlist__moku__box__text">
+            <p>三月のパンタシア</p>
+            <p>ピンクレモネード</p>
+          </div>
+          <i class="fa-solid fa-ellipsis-vertical fa-xl"></i>
+        </div>
+        <div class="playlist__moku__box">
+          <img src="pictures/bluepop.jpg" />
+          <div class="playlist__moku__box__text">
+            <p>三月のパンタシア</p>
+            <p>煙</p>
+          </div>
+          <i class="fa-solid fa-ellipsis-vertical fa-xl"></i>
+        </div>
+      </div>
+      <div class="playlist__control">
+        <div class="playlist__control__info">
+          <p>三月のパンタシア</p>
+          <p>ミッドナイトブルー</p>
+        </div>
+        <div class="playlist__control__button">
+          <i class="fa-solid fa-backward-step"></i>
+          <i class="fa-solid fa-pause fa-xl"></i>
+          <i class="fa-solid fa-forward-step"></i>
+        </div>
+      </div>
+    </div>
+    <div class="kamen nowplay">
+      <div class="bar playlist__bar">
+        <i class="fa-solid fa-arrow-left fa-lg"></i>
+        <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+      </div>
+      <div class="nowplay__music">
+        <img class="nowplay__music__art" src="pictures/bluepop.jpg" />
+        <p>ミッドナイトブルー</p>
+        <p>三月のパンタシア</p>
+      </div>
+      <div class="nowplay__music__prog">
+        <div class="nowplay__music__prog__text">
+          <p>1:22</p>
+          <p>3:59</p>
+        </div>
+        <input
+          type="range"
+          class="nowplay__music__prog__bar"
+          min="0"
+          max="100"
+          value="34"
+          step="0"
+        />
+      </div>
+      <div class="nowplay__buttons">
+        <i class="fa-solid fa-repeat fa-xl"></i>
+        <i class="fa-solid fa-backward-step fa-xl"></i>
+        <i class="fa-solid fa-circle-play fa-4x"></i>
+        <i class="fa-solid fa-forward-step fa-xl"></i>
+        <i class="fa-solid fa-shuffle fa-xl"></i>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/1b7026f12c.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
